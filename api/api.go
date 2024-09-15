@@ -20,7 +20,7 @@ type Error struct{
 	Message string
 }
 
-func writeError(w http.ResponseWriter, messge string, code int){
+func writeError(w http.ResponseWriter, message string, code int){
 	resp := Error{
 		Code: code,
 		Message: message,

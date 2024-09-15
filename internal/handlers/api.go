@@ -1,14 +1,14 @@
-package hndlers
+package handlers
 
 import(
         "github.com/go-chi/chi"
         chimiddle "github.com/go-chi/chi/middleware"
-        "github.com/balaji119/goapi/internal/middelware"
+        "github.com/balaji119/goapi/internal/middleware"
 )
 
 
 func Handler(r *chi.Mux){
-        r.User(chimiddle.StripSlashes)
+        r.Use(chimiddle.StripSlashes)
         r.Route("/account", func(router chi.Router){
 
                 router.Use(middleware.Authorization)

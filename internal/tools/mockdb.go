@@ -8,7 +8,7 @@ type mockDB struct{}
 
 var mockLoginDetails = map[string]LoginDetails{
 	"alex":{
-		AuthToken: "123ABC"
+		AuthToken: "123ABC",
 		Username: "alex",
 	},
 	"balaji":{
@@ -20,7 +20,7 @@ var mockLoginDetails = map[string]LoginDetails{
 var mockCoinDetails = map[string]CoinDetails{
 	"alex": {
 		Coins: 100,
-		Username: "alex"
+		Username: "alex",
 	},
 
 	"balaji":{
